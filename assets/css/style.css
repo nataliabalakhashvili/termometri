@@ -459,7 +459,7 @@ header {
 @media screen and (max-height: 866px) {
   .daily-forecast .image {
     margin-bottom: 0;
-    width: 200px;
+    width: 222px;
   }
 }
 .daily-forecast .image img {
@@ -470,6 +470,11 @@ header {
     height: 200px;
   }
 }
+@media screen and (max-height: 700px) {
+  .daily-forecast .image img {
+    height: 170px;
+  }
+}
 .daily-forecast .city {
   font-size: 44px;
 }
@@ -478,12 +483,22 @@ header {
     font-size: 40px;
   }
 }
+@media screen and (max-height: 700px) {
+  .daily-forecast .city {
+    font-size: 32px;
+  }
+}
 .daily-forecast .date {
   font-size: 21px;
 }
 @media screen and (max-height: 866px) {
   .daily-forecast .date {
     font-size: 19px;
+  }
+}
+@media screen and (max-height: 700px) {
+  .daily-forecast .date {
+    font-size: 15px;
   }
 }
 .daily-forecast .details p {
@@ -503,6 +518,12 @@ header {
   .daily-forecast .degree {
     font-size: 79px;
     margin-top: 30px;
+  }
+}
+@media screen and (max-height: 700px) {
+  .daily-forecast .degree {
+    font-size: 70px;
+    margin-top: 20px;
   }
 }
 .daily-forecast .degree::after {
