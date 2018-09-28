@@ -1,0 +1,576 @@
+@import "normalize"
+
+body
+    display flex
+    min-height 100vh
+    flex-direction column
+    background #ecedee
+    &::-webkit-scrollbar
+        width 6px
+    &::-webkit-scrollbar-thumb
+        background grey
+        border-radius 5px
+
+@keyframes fade-in
+    from 
+        opacity 0
+        transform scale(.8,.8)
+    to 
+        opacity: 1
+        
+
+@keyframes come-in
+    from 
+        opacity 0
+        top -150%
+    to 
+        opacity: 1
+        top 0
+
+.fade-in-element 
+    animation fade-in 1.4s
+
+.hidden
+    opacity 0
+    font-size 0
+
+main
+    flex 1 0 auto
+    
+header
+    position absolute
+    top 0
+    z-index 100
+    width 100%
+.first-page
+    background url(../img/background.svg) no-repeat center center
+    background-size cover
+    height 100vh
+    overflow hidden
+    width 100%
+    position relative
+
+.sun
+    width 29%
+    position absolute
+    right 19%
+    &>img
+        position relative
+        z-index 2
+        margin-top -50%
+
+.cloud
+    width 40%
+    position absolute
+    top 0
+    left calc(-22% - 40px)
+    z-index 5
+    animation come-in 1.0s cubic-bezier(.57,.38,.37,1)
+    &.second
+        left 22%
+        width 32%
+        z-index 1
+        animation come-in 2.1s cubic-bezier(.57,.38,.37,1)
+    &.third
+        right -44px
+        left auto
+        width 45%
+        z-index 1
+        animation come-in 1.8s cubic-bezier(.57,.38,.37,1)
+
+.logo
+    margin 70px 0 0 100px
+    display block
+    img
+        width 143px
+
+.search-form
+    margin-left 50px
+    margin-top 45px
+    border-bottom 1px solid white
+    label
+        color white!important
+        top -6px!important
+    input
+        width 260px!important
+        color white!important
+        border none!important
+        height 40px!important
+        margin-bottom 0!important
+        &::placeholder
+            color white!important
+        &:focus
+            background transparent!important
+            border-bottom none!important
+    button
+        background url(../img/search.svg) no-repeat center center
+        background-size 60%
+        width 40px
+        height 40px
+        border none
+        margin-top 13px
+
+.enter
+    background url(../img/user.svg) no-repeat 0 center!important
+    border none
+    padding 7px 0 5px 40px
+    color white
+    margin-top 60px
+    margin-right 40px
+.languages
+    color white
+    padding-top 4px
+    font-size 20px
+    margin-top 60px
+    margin-right 100px
+    position relative
+    &::after
+        position absolute
+        content ""
+        left 50%
+        bottom 2px
+        transform translateX(-50%)
+        width 100%
+        height 1px 
+        transition 0.2s
+        background white
+    &:hover
+        &::after
+            width 0
+
+.enter-section,
+.register-section,
+.reset-section
+    width 100%
+    max-width 500px
+    height 100vh
+    background white
+    position fixed
+    right -500px
+    top 0
+    z-index 100
+    transition 0.3s cubic-bezier(.57,.38,.37,1)
+    box-shadow 0 0 1px rgba(0,0,0,0.1)
+    &.active
+        right 0
+    .title
+        font-family bpg_le_studio_caps
+        color green
+        margin-top 10vh
+    .image-block
+        width 200px
+        margin-top 15vh
+        margin-left 50%
+        transform translateX(-50%) 
+    .image
+        width 100%
+        image(100%)
+    form
+        width 100%
+        padding 20px 90px
+    input
+        border 1px solid grey!important
+        text-align center
+        height 40px!important
+    label
+        top 13px
+        left 50%
+        transform translateX(-50%)!important
+        transition 0.2s
+        &.active
+            top -17px
+            transform translateX(-50%) scale(0.8,0.8)!important
+    .submit
+        color pink
+        background transparent
+        border none
+        font-family bpg_le_studio_caps
+        position relative
+        font-size 22px
+        margin-top 40px
+        &::after
+            position absolute
+            content ""
+            left 50%
+            bottom 3px
+            transform translateX(-50%)
+            width 100%
+            height 1px 
+            transition 0.2s
+            background pink
+        &:hover
+            &::after
+                width 0
+ 
+.enter-inside,
+.register-inside,
+.reset-inside
+    position absolute
+    right -900px 
+    transition 0.7s  
+    width 100%
+    &.active
+        right 0
+
+.reset-password
+    button
+        background transparent
+        border none
+        position relative
+        color green
+        font-family bpg_le_studio_caps
+        margin-top 10px
+        display inline-block
+        &::after
+            position absolute
+            content ""
+            left 50%
+            bottom 0
+            transform translateX(-50%)
+            width 100%
+            height 1px 
+            transition 0.2s
+            background green
+        &:hover
+            &::after
+                width 0
+
+.register
+    margin 0 auto
+    display inline-block
+    position relative
+    color green
+    font-family bpg_le_studio_caps
+    margin-top 20px
+    border none
+    background transparent
+    display inline-block
+    &::after
+        position absolute
+        content ""
+        left 50%
+        bottom 0
+        transform translateX(-50%)
+        width 100%
+        height 1px 
+        transition 0.2s
+        background green
+    &:hover
+        &::after
+            width 0
+
+.register-section,
+.reset-section
+    z-index 101
+    background #f9f9f9
+    form
+        margin-top 27vh
+    .register-btn
+        width 100%
+        border 1px solid  grey
+        font-family bpg_le_studio_caps
+        background transparent
+        color pink
+        padding 10px 0 5px
+        font-size 16px
+        margin-top 15px
+    .register-by-fb
+        margin-top 25px
+        width 100%
+        border-radius 5px
+        background transparent url(../img/fb.svg) no-repeat 8px center
+        background-size 24px
+        border 1px solid green
+        font-family bpg_le_studio_caps
+        color green
+        padding 10px 0 5px 20px
+
+.register-btn,
+.register-by-fb
+    position relative
+    &::after
+        content ""
+        position absolute
+        width 0
+        height 100%
+        background white
+        left 0
+        top 0
+        transition 0.4s
+        z-index -1
+    &:hover
+        &::after
+            width 100%
+            left auto
+            right 0
+
+.daily-forecast
+    margin-top 20vh
+    margin-left 243px
+    *
+        color white
+    .image
+        margin-bottom 20px
+        width 262px
+        text-align center
+        img
+            height 250px
+    .city
+        font-size 44px
+    .date
+        font-size 21px
+    .details
+        p
+            display inline-block
+            background-position 0 center
+            background-repeat no-repeat
+            padding-left 30px
+            background-size 20px
+    .degree
+        font-size 100px
+        margin 26px 0 0 20px
+        position relative
+        line-height 0.7
+        &::after
+            position absolute
+            content ""
+            border: 4px solid white
+            border-radius 50%
+            width 20px
+            height 20px
+            top -22px
+            right -22px
+    .share-on-fb
+        margin-top 10px
+        display inline-block
+        background url('../img/fb.svg') 5px center no-repeat
+        background-size 20px
+        filter brightness(10)
+        font-family bpg_le_studio_caps
+        padding 5px 15px 1px
+        padding-left 35px
+        border 1px solid white
+        border-radius 5px
+        position relative
+        &::after
+            content ""
+            position absolute
+            width 0
+            height 100%
+            background rgba(#f69969, 0.2)
+            left 0
+            top 0
+            transition 0.4s
+            z-index -1
+        &:hover
+            &::after
+                width 100%
+                left auto
+                right 0
+
+.forecasts
+    width 100%
+    height 200px
+    background rgba(black, 0.15)
+    position absolute
+    padding 0 50px   
+    bottom 0
+    z-index 10
+    .title
+        position absolute
+        color white
+        border-bottom 1px solid white
+        right 100px 
+        top -50px
+
+.each-day
+    width calc(100% / 7)   
+    float left  
+    height 100%
+    display flex
+    justify-content center
+    align-items center
+    position relative
+    transition 0.2s
+    &:first-child
+        &::after
+            background transparent!important
+            display none
+    &::after
+        content ''
+        position absolute
+        left 0
+        width 1px 
+        height 70%
+        background white
+    &:hover
+        .day
+            &::after
+                left auto
+                width 100%
+                right 0
+    a
+        text-align center
+        padding 0 50px   
+        display block
+    .day
+        color white
+        font-size 20px
+        position relative
+        &::after
+            position absolute
+            content ""
+            left 0
+            bottom 3px
+            width 0
+            height 1px 
+            transition 0.2s
+            background white            
+    .image
+        img
+            height 100px        
+    .degree
+        font-size 27px
+        line-height 1
+        color white
+        display inline-block
+        position relative
+        &::after
+            position absolute
+            content ""
+            border: 2px solid white
+            border-radius 50%
+            width 10px
+            height 10px
+            top 0
+            right -15px
+
+.daily-weather-forecast
+    margin 20px
+    background #d9ecf9
+.hourly-forecast
+    background #ecedee
+    padding 0 20px
+.hourly-forecast-slider
+    padding 20px 40px
+    background white
+    position relative
+    .head
+        display inline-block
+        margin 0 auto
+        border-bottom 1px solid darkgrey
+    .info-block
+        width 186px
+    .owl-carousel
+        width calc(100% - 186px)
+    .owl-theme .owl-nav [class*=owl-]
+        background transparent
+        position absolute
+        img
+            width 15px
+    .owl-prev
+        left -225px
+        top 50%
+        transform translateY(-50%)
+    .owl-next
+        right -40px
+        top 50%
+        transform translateY(-50%)
+    .info-block
+        margin-top 30px
+    .day
+        color green
+        font-size 16px
+        p
+            padding-top 4px
+            &:first-child
+                border-bottom 1px solid grey
+    .title
+        padding 17px 0 12px
+        border-bottom 1px solid grey
+        &:last-child
+            border-bottom none
+    .hour
+        color green
+        border-bottom 1px solid grey
+        margin-top 13px
+    .image
+        margin-top 10px
+        img
+            height 25px
+    .weather
+        height 52px
+        border-bottom 1px solid grey
+        display flex
+        align-items center
+        justify-content center
+        font-size 14px
+        &.degree
+            span
+                position relative
+                &::after
+                    position absolute
+                    content ""
+                    border: 1px solid rgba(darkgrey, 0.7)
+                    border-radius 50%
+                    width 5px
+                    height 5px
+                    top 0
+                    right -5px      
+        &.text
+            height 45px    
+            line-height 1
+            font-size 12px 
+        &:last-child
+            border-bottom none
+
+.daily-minmax
+    padding 25px
+    background white
+    text-align center
+    .title
+        width 80%
+        margin-left 10%
+        position relative
+        &::after
+            position absolute
+            content ''
+            width 66%
+            left 17%
+            height 1px 
+            background rgba(darkgrey, .75)
+            top 20px
+            
+.each-temp
+    border 1px solid grey
+    padding 10px 0 20px
+    margin-top 30px
+    .text
+        span
+            position relative
+            &:first-child
+                color pink
+            &:last-child
+                font-size 33px
+                &:after
+                    content ''
+                    position absolute
+                    width 10px
+                    height 10px
+                    border-radius 50%
+                    border 2px solid darkgrey
+                    
+    &.min
+        .text
+            span
+                &:first-child
+                    color green
+    img
+        height 65px
+        margin 30px 0 15px
+    
+footer
+    background white
+    padding 20px 10px 10px
+    img
+        width 180px

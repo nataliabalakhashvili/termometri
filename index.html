@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Termometri</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="icon" type="image/icon" href="assets/img/favico.ico"> -->
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/simplelightbox.min.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<!-- header start -->
+
+	<header>
+		<a href="index.html" class="logo hidden left">
+			<img src="assets/img/logo.svg" alt="logo">
+		</a>
+		<form class="search-form left hidden">
+			<div class="input-field left">
+				<label for="searchInput">გაიგე ამინდი რეგიონებში</label>
+				<input type="search" name="search" id="searchInput">
+			</div>
+			<button type="submit" class="left"></button>
+			<div class="clear"></div>
+		</form>	
+		<a href="" class="languages right hidden">
+			EN
+		</a>
+		<button class="right enter hidden">
+			შესვლა
+		</button>
+		<div class="clear"></div>
+	</header>
+	
+	<!-- header end -->
+
+	<!-- enter field start  -->
+
+	<section class="enter-section">
+		<div class="enter-inside">
+			<div class="image-block">
+				<div class="image hidden" style="background-image: url(assets/img/user-grey.svg)"></div>
+			</div>
+			<form>
+				<div class="input-field hidden">
+					<label for="enterEmail">მეილი</label>
+					<input type="email" name="email" id="enterEmail">
+				</div>
+				<div class="input-field hidden">
+					<label for="enterPassword">პაროლი</label>
+					<input type="password" name="password" id="enterPassword">
+				</div>
+				<div class="reset-password center-align hidden">
+					<button type="button" class="reset">
+						პაროლის აღდგენა
+					</button>
+				</div>
+				<div class="reset-password center-align hidden">
+					<button class="register" type="button">
+						რეგისტრაცია
+					</button>				
+				</div>
+				<div class="center-align hidden">
+					<button class="submit" type="submit">
+						შესვლა
+					</button>				
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- enter field end -->
+
+	<!-- register field start  -->
+
+	<section class="register-section">
+		<div class="register-inside">
+			<form class="center-align">
+				<div class="input-field hidden">
+					<label for="registerName">სახელი</label>
+					<input type="text" name="text" id="registerName">
+				</div>
+				<div class="input-field hidden">
+					<label for="registerEmail">მეილი</label>
+					<input type="email" name="email" id="registerEmail">
+				</div>
+				<div class="input-field hidden">
+					<label for="enterPassword">პაროლი</label>
+					<input type="password" name="password" id="enterPassword">
+				</div>
+				<button class="register-btn">
+					რეგისტრაცია
+				</button>
+				<button class="register-by-fb">
+					ავტორიზაცია ფეისბუქით
+				</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- register field end -->
+
+	<!-- reset password field start  -->
+
+	<section class="reset-section">
+		<div class="reset-inside">
+			<form class="center-align">
+				<div class="title">
+					პაროლის აღდგენა
+				</div>
+				<div class="input-field hidden">
+					<label for="registerEmail">მეილი</label>
+					<input type="email" name="email" id="registerEmail">
+				</div>
+				<div class="center-align hidden">
+					<button class="submit" type="submit">
+						აღდგენა
+					</button>				
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- reset password field end -->
+
+	<!-- content start -->
+
+	<main>
+		
+		<section class="first-page">
+			<div class="sun hidden">
+				<img src="assets/img/sun.svg">
+				<div class="cloud first">
+					<img src="assets/img/cloud_1.svg">
+				</div>
+				<div class="cloud second">
+					<img src="assets/img/cloud_2.svg">
+				</div>
+				<div class="cloud third">
+					<img src="assets/img/cloud_3.svg">
+				</div>
+			</div>	
+			<div class="daily-forecast">
+				<div class="image left hidden">
+					<img src="assets/img/rainy.svg" alt="">
+				</div>
+				<div class="clear"></div>
+				<div>
+					<div class="title left ">
+						<p class="city hidden">
+							თბილისი
+						</p>
+						<p class="date hidden">
+							ორშაბათი 5 მარტი
+						</p>
+					</div>
+					<div class="degree left hidden">
+						15
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="details">
+					<div>
+						<p class="hidden" style="background-image: url(assets/img/rainy.svg)">
+							5% წვიმის შანსი
+						</p>
+					</div>
+					<div>
+						<p class="hidden" style="background-image: url(assets/img/wind.svg)">
+							2 კმ/სთ ქარის სიჩქარე
+						</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<a href="" class="share-on-fb hidden">
+					გააზიარე ფეისბუქზე
+				</a>
+			</div>
+			<div class="forecasts">
+				<div class="each-day hidden">
+					<a href="">
+						<div class="image">
+							<img src="assets/img/rainy.svg" alt="">
+						</div>
+						<p class="day">
+							ორშაბათი
+						</p>
+						<div class="degree">
+							15
+						</div>
+					</a>
+				</div>
+				<div class="each-day hidden">
+					<a href="">
+						<div class="image">
+							<img src="assets/img/rainy.svg" alt="">
+						</div>
+						<p class="day">
+							სამშაბათი
+						</p>
+						<div class="degree">
+							15
+						</div>
+					</a>
+				</div>
+				<div class="each-day hidden">
+					<a href="">
+						<div class="image">
+							<img src="assets/img/rainy.svg" alt="">
+						</div>
+						<p class="day">
+							ოთხშაბათი
+						</p>
+						<div class="degree">
+							15
+						</div>
+					</a>
+				</div>
+				<div class="each-day hidden">
+					<a href="">
+						<div class="image">
+							<img src="assets/img/rainy.svg" alt="">
+						</div>
+						<p class="day">
+							ხუთშაბათი
+						</p>
+						<div class="degree">
+							15
+						</div>
+					</a>
+				</div>
+				<div class="each-day hidden">
+					<a href="">
+						<div class="image">
+							<img src="assets/img/rainy.svg" alt="">
+						</div>
+						<p class="day">
+							პარასკევი
+						</p>
+						<div class="degree">
+							15
+						</div>
+					</a>
+				</div>
+				<div class="each-day hidden">
+					<a href="">
+						<div class="image">
+							<img src="assets/img/rainy.svg" alt="">
+						</div>
+						<p class="day">
+							შაბათი
+						</p>
+						<div class="degree">
+							15
+						</div>
+					</a>
+				</div>
+				<div class="each-day hidden">
+					<a href="">
+						<div class="image">
+							<img src="assets/img/rainy.svg" alt="">
+						</div>
+						<p class="day">
+							კვირა
+						</p>
+						<div class="degree">
+							15
+						</div>
+					</a>
+				</div>
+				<p class="title">
+					დღის საათობრივი პროგნოზი
+				</p>
+				<div class="clear"></div>
+			</div>
+		</section>
+		
+		<!-- daily weather forecast section start -->
+
+		<section class="daily-weather-forecast">
+			<div class="container">
+				<div class="hourly-forecast">
+					<div class="row">
+						<div class="col l8 m12 s12">
+							<div class="hourly-forecast-slider hidden">
+								<div class="head">
+									დღის საათობრივი პროგნოზი
+								</div>
+								<div class="left info-block">
+									<div class="day">
+										<p>ორშაბათი</p>
+										<p>5 მარტი</p>
+									</div>
+									<p class="title">Forecast</p>
+									<p class="title">Temp(c)</p>
+									<p class="title">RealFeed</p>
+									<p class="title">Wind (km/h)</p>
+								</div>
+								<div class="owl-carousel owl-theme left">
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		12:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		13:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		14:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		15:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		16:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		17:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		18:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		19:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		20:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								    <div class="item center-align">
+								    	<div class="hour">
+								    		21:00
+								    	</div>
+								    	<div class="image">
+								    		<img src="assets/img/rainy-grey.svg">
+								    	</div>
+								    	<div class="weather text">
+								    		Mostly Sunny
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather degree">
+								    		<span>
+								    			36
+								    		</span>
+								    	</div>
+								    	<div class="weather">
+								    		18 SE
+								    	</div>
+								    </div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="col l4 m12 s12">
+							<div class="daily-minmax hidden">
+								<div class="title">
+									დღის მაქს. და მინ. ტემპერატურა
+								</div>
+								<div class="temp row">
+									<div class="col s6">
+										<div class="each-temp max">
+											<div class="temp-title center-align">
+												ორშ. 5 მარტი
+											</div>
+											<div class="image">
+												<img src="assets/img/sun-pink.svg">
+											</div>
+											<div class="text">
+												<span>მაქს.</span>
+												<span>15</span>
+											</div>
+										</div>
+									</div>
+									<div class="col s6">
+										<div class="each-temp min">
+											<div class="temp-title center-align">
+												ორშ. 5 მარტი
+											</div>
+											<div class="image">
+												<img src="assets/img/snow-green.svg">
+											</div>
+											<div class="text">
+												<span>მინ.</span>
+												<span>-15</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- daily weather forecast section end -->
+
+	</main>
+
+	<!-- content end -->
+
+	<!-- footer start -->
+
+	<footer>
+		<div class="copyright center-align hidden">
+			<img src="assets/img/webber.svg" alt="">
+		</div>
+	</footer>
+
+	<!-- footer end -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/simple-lightbox.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
