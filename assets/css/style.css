@@ -456,14 +456,35 @@ header {
   width: 262px;
   text-align: center;
 }
+@media screen and (max-height: 866px) {
+  .daily-forecast .image {
+    margin-bottom: 0;
+    width: 200px;
+  }
+}
 .daily-forecast .image img {
   height: 250px;
+}
+@media screen and (max-height: 866px) {
+  .daily-forecast .image img {
+    height: 200px;
+  }
 }
 .daily-forecast .city {
   font-size: 44px;
 }
+@media screen and (max-height: 866px) {
+  .daily-forecast .city {
+    font-size: 40px;
+  }
+}
 .daily-forecast .date {
   font-size: 21px;
+}
+@media screen and (max-height: 866px) {
+  .daily-forecast .date {
+    font-size: 19px;
+  }
 }
 .daily-forecast .details p {
   display: inline-block;
@@ -477,6 +498,12 @@ header {
   margin: 26px 0 0 20px;
   position: relative;
   line-height: 0.7;
+}
+@media screen and (max-height: 866px) {
+  .daily-forecast .degree {
+    font-size: 79px;
+    margin-top: 30px;
+  }
 }
 .daily-forecast .degree::after {
   position: absolute;
@@ -526,6 +553,11 @@ header {
   bottom: 0;
   z-index: 10;
 }
+@media screen and (max-height: 866px) {
+  .forecasts {
+    height: 150px;
+  }
+}
 .forecasts .title {
   position: absolute;
   color: #fff;
@@ -570,6 +602,11 @@ header {
   font-size: 20px;
   position: relative;
 }
+@media screen and (max-height: 866px) {
+  .each-day .day {
+    font-size: 16px;
+  }
+}
 .each-day .day::after {
   position: absolute;
   content: "";
@@ -583,12 +620,22 @@ header {
 .each-day .image img {
   height: 100px;
 }
+@media screen and (max-height: 866px) {
+  .each-day .image img {
+    height: 60px;
+  }
+}
 .each-day .degree {
   font-size: 27px;
   line-height: 1;
   color: #fff;
   display: inline-block;
   position: relative;
+}
+@media screen and (max-height: 866px) {
+  .each-day .degree {
+    font-size: 22px;
+  }
 }
 .each-day .degree::after {
   position: absolute;

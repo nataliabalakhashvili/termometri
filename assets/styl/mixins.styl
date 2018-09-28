@@ -17,9 +17,14 @@ dots(height, amount){
     -webkit-line-clamp amount
 }
 mq(size){
-	@media only screen and (max-width: size){
-		{block}
-	}
+    @media only screen and (max-width: size){
+        {block}
+    }
+}
+mqh(size){
+    @media screen and (max-height: size){
+        {block}
+    }
 }
 
 
